@@ -1,8 +1,9 @@
 import './App.css';
+import {createTheme, ThemeProvider} from "@mui/material";
+import MainAppBar from "./Layout/MainAppBar";
 import {Route, Routes} from "react-router";
 import Home from "./components/Home/Home";
-import {Container, createTheme, ThemeProvider} from "@mui/material";
-import Box from "@mui/material/Box";
+import Feed from "./components/Feed/Feed";
 
 function App() {
     const theme = createTheme({
@@ -20,18 +21,18 @@ function App() {
             borderRadius: 20,
         },
     })
-    return (<Box className="App">
+    return (<div className="App">
         <ThemeProvider theme={theme}>
-            <Container fixed>
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/about" element={<Feed/>}/>
-                    <Route path="/settings" element={<House/>}/>
-                    <Route path="*" element={<NotFound/>}/>
-                </Routes>
-            </Container>
-        </ThemeProvider>
-    </Box>);
+        <MainAppBar/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/feed" element={<Feed/>}/>
+                    {/*<Route path="blogs" element={<Feed />} />*/}
+                    {/*<Route path="contact" element={<About Me />} />*/}
+            </Routes>
+    </ThemeProvider>
+</div>)
+    ;
 }
 
 export default App;
