@@ -12,7 +12,9 @@ export default function MainAppBar() {
         <Box sx={{flexGrow: 1}}>
             <AppBar position="static">
                 <Toolbar>
-                    <img style={{width: '8rem'}} src={LandaLogo} alt={'landa-text-logo'}/>
+                    <Link component={RouterLink} to="/">
+                        <img style={{width: '8rem'}} src={LandaLogo} alt={'landa-text-logo'}/>
+                    </Link>
                     <Box flexGrow={1}/>
                     <Box sx={{'a': { mx : 2, textDecoration: 'none', color: '#ffffff'}}}>
                             <Link component={RouterLink} to="/">
@@ -21,12 +23,10 @@ export default function MainAppBar() {
                             <Link component={RouterLink} to="/feed">
                                 Feed
                             </Link>
-                            <Link component={RouterLink} to="/about">
-                                About me
-                            </Link>
+                            <a href="https://flaysh.me" target="_blank" rel="noopener noreferrer">
+                                Flaysh
+                            </a>
                     </Box>
-
-
                     <Avatar alt="Flaysh" src="https://i.imgur.com/iyyjoyV.jpg"/>
                 </Toolbar>
             </AppBar>
