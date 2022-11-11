@@ -95,18 +95,18 @@ const Property = () => {
                         <Typography variant={'h5'}>
                             {property?.address_2}
                         </Typography>
-<Box mt={1}>
-                        <Chip color="primary" label={`${property?.share_price} $`} size='large' onClick={() => {
-                        }}/>
-                        <Chip color='secondary'
-                              label={`${property?.units} Units`}
-                              variant="outlined" onClick={() => {
-                        }} sx={{mx: 1}}/>
-                        <Chip color={property.available ? 'secondary' : 'error'}
-                              label={property.available ? 'Available' : 'Not Available'}
-                              variant="outlined" onClick={() => {
-                        }}/>
-</Box>
+                        <Box mt={1}>
+                            <Chip color="primary" label={`${property?.share_price} $`} size='large' onClick={() => {
+                            }}/>
+                            <Chip color='secondary'
+                                  label={`${property?.units} Units`}
+                                  variant="outlined" onClick={() => {
+                            }} sx={{mx: 1}}/>
+                            <Chip color={property?.available ? 'secondary' : 'error'}
+                                  label={property?.available ? 'Available' : 'Not Available'}
+                                  variant="outlined" onClick={() => {
+                            }}/>
+                        </Box>
                     </Box>
                     <Box flexGrow={1}/>
                     <Box display={'flex'} flexDirection={'column'}>
