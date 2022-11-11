@@ -1,0 +1,100 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "address_1": "5700 Etiwanda Ave",
+      "address_2": "Tarzana, California(CA), 91356",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-Lsrt4ocajqs%2FTj7aiqvVr3I%2FAAAAAAAATJU%2FHrwFn5SmdjU%2Fs1600%2Fhouse3.jpg&f=1&nofb=1&ipt=429d0a1aeb32f116c147c03997f8378e2320809900402cc3c5cc0e93930e1623&ipo=images,",
+      "share_price": 14,
+      "available": true
+    },
+    {
+      "id": 2,
+      "address_1": "5700 Etiwanda Ave #224",
+      "address_2": "Tarzana, California(CA), 91356",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2F8up9xqxk1zy41.jpg&f=1&nofb=1&ipt=8bcea6a007506882d0bf6c93e00d7ce1b1c66f028966a839e344133bcb042d2b&ipo=images",
+      "share_price": 14,
+      "available": true
+    },
+    {
+      "id": 3,
+      "address_1": "5700 Etiwanda Ave #224",
+      "address_2": "Tarzana, California(CA), 91356",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.qfdALHEI0n_eXBb_vFavnwHaFj%26pid%3DApi&f=1&ipt=fb5865977fa8d5fdf2e371e981a6ee0a484e53c592c0ea75f01ac47314ebae2a&ipo=images",
+      "share_price": 14,
+      "available": false
+    },
+    {
+      "id": 4,
+      "address_1": "5700 Etiwanda Ave #224",
+      "address_2": "Tarzana, California(CA), 91356",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-_d-gRkjwx7o%2FTj7ajA4YgbI%2FAAAAAAAATJc%2FHmtjm6nVKk0%2Fs1600%2Fhouse2.jpg&f=1&nofb=1&ipt=71bfb5bf35d914d326a95daf5828a1cf28de39aaef83f11b16785e46c6c3f556&ipo=images",
+      "share_price": 14,
+      "available": true
+    },
+    {
+      "id": 5,
+      "address_1": "5700 Etiwanda Ave #224",
+      "address_2": "Tarzana, California(CA), 91356",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-_d-gRkjwx7o%2FTj7ajA4YgbI%2FAAAAAAAATJc%2FHmtjm6nVKk0%2Fs1600%2Fhouse2.jpg&f=1&nofb=1&ipt=71bfb5bf35d914d326a95daf5828a1cf28de39aaef83f11b16785e46c6c3f556&ipo=images",
+      "share_price": 14,
+      "available": true
+    },
+    {
+      "id": 6,
+      "address_1": "5700 Etiwanda Ave #224",
+      "address_2": "Tarzana, California(CA), 91356",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-_d-gRkjwx7o%2FTj7ajA4YgbI%2FAAAAAAAATJc%2FHmtjm6nVKk0%2Fs1600%2Fhouse2.jpg&f=1&nofb=1&ipt=71bfb5bf35d914d326a95daf5828a1cf28de39aaef83f11b16785e46c6c3f556&ipo=images",
+      "share_price": 14,
+      "available": true
+    },
+    {
+      "id": 7,
+      "address_1": "5700 Etiwanda Ave #224",
+      "address_2": "Tarzana, California(CA), 91356",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-_d-gRkjwx7o%2FTj7ajA4YgbI%2FAAAAAAAATJc%2FHmtjm6nVKk0%2Fs1600%2Fhouse2.jpg&f=1&nofb=1&ipt=71bfb5bf35d914d326a95daf5828a1cf28de39aaef83f11b16785e46c6c3f556&ipo=images",
+      "share_price": 14,
+      "available": true
+    },
+    {
+      "id": 8,
+      "address_1": "5700 Etiwanda Ave #224",
+      "address_2": "Tarzana, California(CA), 91356",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-_d-gRkjwx7o%2FTj7ajA4YgbI%2FAAAAAAAATJc%2FHmtjm6nVKk0%2Fs1600%2Fhouse2.jpg&f=1&nofb=1&ipt=71bfb5bf35d914d326a95daf5828a1cf28de39aaef83f11b16785e46c6c3f556&ipo=images",
+      "share_price": 14,
+      "available": true
+    },
+    {
+      "id": 9,
+      "address_1": "5700 Etiwanda Ave #224",
+      "address_2": "Tarzana, California(CA), 91356",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-_d-gRkjwx7o%2FTj7ajA4YgbI%2FAAAAAAAATJc%2FHmtjm6nVKk0%2Fs1600%2Fhouse2.jpg&f=1&nofb=1&ipt=71bfb5bf35d914d326a95daf5828a1cf28de39aaef83f11b16785e46c6c3f556&ipo=images",
+      "share_price": 14,
+      "available": true
+    },
+    {
+      "id": 10,
+      "address_1": "5700 Etiwanda Ave #224",
+      "address_2": "Tarzana, California(CA), 91356",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-_d-gRkjwx7o%2FTj7ajA4YgbI%2FAAAAAAAATJc%2FHmtjm6nVKk0%2Fs1600%2Fhouse2.jpg&f=1&nofb=1&ipt=71bfb5bf35d914d326a95daf5828a1cf28de39aaef83f11b16785e46c6c3f556&ipo=images",
+      "share_price": 14,
+      "available": true
+    },
+    {
+      "id": 11,
+      "address_1": "5700 Etiwanda Ave #224",
+      "address_2": "Tarzana, California(CA), 91356",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-_d-gRkjwx7o%2FTj7ajA4YgbI%2FAAAAAAAATJc%2FHmtjm6nVKk0%2Fs1600%2Fhouse2.jpg&f=1&nofb=1&ipt=71bfb5bf35d914d326a95daf5828a1cf28de39aaef83f11b16785e46c6c3f556&ipo=images",
+      "share_price": 14,
+      "available": true
+    },
+    {
+      "id": 12,
+      "address_1": "5700 Etiwanda Ave #224",
+      "address_2": "Tarzana, California(CA), 91356",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-_d-gRkjwx7o%2FTj7ajA4YgbI%2FAAAAAAAATJc%2FHmtjm6nVKk0%2Fs1600%2Fhouse2.jpg&f=1&nofb=1&ipt=71bfb5bf35d914d326a95daf5828a1cf28de39aaef83f11b16785e46c6c3f556&ipo=images",
+      "share_price": 14,
+      "available": true
+    }
+  ]
+}

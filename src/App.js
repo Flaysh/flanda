@@ -1,9 +1,10 @@
 import './App.css';
-import {Container, createTheme, ThemeProvider} from "@mui/material";
+import {createTheme, ThemeProvider} from "@mui/material";
 import MainAppBar from "./Layout/MainAppBar";
 import {Route, Routes} from "react-router";
-import Home from "./components/Home/Home";
-import Feed from "./components/Feed/Feed";
+import Home from "./components/Home";
+import Feed from "./components/Feed";
+import Property from "./components/Property";
 
 function App() {
     const theme = createTheme({
@@ -19,7 +20,7 @@ function App() {
                 main: '#151515'
             }
         }, shape: {
-            borderRadius: 20,
+            borderRadius: 25,
         },
         typography: {
             fontFamily: 'Plus Jakarta Sans',
@@ -28,12 +29,12 @@ function App() {
     return (<div className="App">
         <ThemeProvider theme={theme}>
             <MainAppBar/>
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/feed" element={<Feed/>}/>
-                    {/*<Route path="blogs" element={<Feed />} />*/}
-                    {/*<Route path="contact" element={<About Me />} />*/}
-                </Routes>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/feed" element={<Feed/>}/>
+                <Route path="/feed/property/:id" element={<Property />} />
+                <Route path="*" element={<Home/>}/>
+            </Routes>
         </ThemeProvider>
     </div>)
         ;
