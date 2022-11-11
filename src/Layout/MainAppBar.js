@@ -3,14 +3,24 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import LandaLogo from '../assets/white-logo.png';
-import {Avatar, Link} from "@mui/material";
+import {Avatar, Link, Slide, useScrollTrigger} from "@mui/material";
 import {Link as RouterLink} from 'react-router-dom';
 
 
-export default function MainAppBar() {
+export default function MainAppBar(props: Props) {
+    function HideOnScroll(props: Props) {
+        const {children, window} = props;
+        const trigger = useScrollTrigger();
+        return (
+            <Slide appear={false} direction="down" in={!trigger}>
+                {children}
+            </Slide>
+        );
+    }
+
     return (
-        <Box sx={{flexGrow: 1}}>
-            <AppBar position="static">
+        <HideOnScroll {...props}>
+            <AppBar position="fixed">
                 <Toolbar>
                     <Link component={RouterLink} to="/">
                         <img style={{width: '8rem'}} src={LandaLogo} alt={'landa-text-logo'}/>
@@ -30,6 +40,6 @@ export default function MainAppBar() {
                     <Avatar alt="Flaysh" src="https://i.imgur.com/iyyjoyV.jpg"/>
                 </Toolbar>
             </AppBar>
-        </Box>
+        </HideOnScroll>
     );
 }

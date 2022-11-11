@@ -15,18 +15,18 @@ const Feed = () => {
         });
     }
     useEffect(() => {
-    getFeedItems()
+        getFeedItems()
     }, []);
 
-    if (!feedItems) return null; // todo later
-
+    if (!feedItems) return null;
 
     return (<Container>
-        <Typography variant={'h4'} my={4}>Explore Properties</Typography>
+        <Typography variant={'h4'} my={5}>Explore Properties</Typography>
+
         <Grid container spacing={2}>
             {feedItems.map(feedItem => {
-                return (<Grid  key={feedItem?.id} item xs={12} sm={6} md={4}>
-                    <FeedItem property={feedItem} />
+                return (<Grid key={feedItem?.id} item xs={12} sm={6} md={4}>
+                    <FeedItem property={feedItem}/>
                 </Grid>)
             })}
         </Grid>
