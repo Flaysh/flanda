@@ -26,8 +26,7 @@ import ShoppingCartCheckoutRoundedIcon from '@mui/icons-material/ShoppingCartChe
 
 const Property = () => {
     const {id} = useParams()
-    const baseURL = `http://localhost:5000/properties/`;
-// const baseURL = `https://flaysh.github.io/properties/`;
+    const baseURL = "https://flanda-json-server.herokuapp.com/properties/";
     const [property, setProperty] = useState(null);
     const [rating, setRating] = useState(Math.floor(Math.random() * 5) + 1);
 

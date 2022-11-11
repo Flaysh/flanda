@@ -5,8 +5,7 @@ import FeedItem from "./FeedItem";
 
 
 const Feed = () => {
-    const baseURL = "http://localhost:5000/properties/";
-// const baseURL = "https://flaysh.github.io/properties/";
+    const baseURL = "https://flanda-json-server.herokuapp.com/properties/";
     const [feedItems, setFeedItems] = useState(null);
 
     const getFeedItems = () => {
