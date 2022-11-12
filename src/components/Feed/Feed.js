@@ -3,6 +3,8 @@ import {Container, Grid, Skeleton, Typography} from "@mui/material";
 import axios from "axios";
 import FeedItem from "./FeedItem";
 
+const SKELETON_WIDTH = 373
+const SKELETON_HEIGHT = 375
 
 const Feed = () => {
     const baseURL = "https://flanda-json-server.herokuapp.com/properties/";
@@ -14,7 +16,8 @@ const Feed = () => {
             setFeedItems(response.data);
             setLoading(false)
         });
-    }, [])
+    }, [loading])
+
     useEffect(() => {
         getFeedItems()
     }, []);
@@ -26,8 +29,8 @@ const Feed = () => {
             {(loading ? Array.from(new Array(12)) : feedItems).map((feedItem, index) => (
                 <Grid key={loading ? index : feedItem?.id} item xs={12} sm={6} md={4}>
                     {feedItem ? <FeedItem property={feedItem}/> :
-                        <Skeleton variant="rectangular" sx={{borderRadius: 1}} width={373} height={375}/>}
-
+                        <Skeleton variant="rectangular" sx={{borderRadius: 1}} width={SKELETON_WIDTH}
+                                  height={SKELETON_HEIGHT}/>}
                 </Grid>
             ))}
         </Grid>

@@ -10,6 +10,9 @@ import PropertyDetails from "./PropertyDetails";
 import ActionButton from "./ActionButton";
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 
+const SKELETON_HEIGHT = 1000
+const IMAGE_HEIGHT = 700
+
 const Property = () => {
     const {id} = useParams()
     const baseURL = useMemo(() => "https://flanda-json-server.herokuapp.com/properties/", []);
@@ -31,13 +34,13 @@ const Property = () => {
         </Link>
         {property?.image ? <Card display={'flex'}>
             <Box sx={{justifyContent: 'space-evenly'}}>
-                <LazyLoadImage alt="property-image" src={property?.image} height={700}
+                <LazyLoadImage alt="property-image" src={property?.image} height={IMAGE_HEIGHT}
                                width={'100%'}/>
                 <ActionButton/>
             </Box>
             <PropertyDetails property={property}/>
             <LineChart/>
-        </Card> : <Skeleton variant={'rectangular'} sx={{borderRadius: 1}} height={1000}/>}
+        </Card> : <Skeleton variant={'rectangular'} sx={{borderRadius: 1}} height={SKELETON_HEIGHT}/>}
     </Container>
 }
 

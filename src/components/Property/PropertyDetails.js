@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React, {useCallback, useState} from 'react';
 import Box from "@mui/material/Box";
 import {Chip, Fab, Rating, Typography} from "@mui/material";
 
 
 const PropertyDetails = ({property}) => {
     const [rating, setRating] = useState(Math.floor(Math.random() * 5) + 1);
+    const makeClickable = useCallback(() => {
+    })
 
     return <Box>
         <Box display={'flex'} m={2}>
@@ -16,16 +18,13 @@ const PropertyDetails = ({property}) => {
                     {property?.address_2}
                 </Typography>
                 <Box mt={2}>
-                    <Chip color="primary" label={`${property?.share_price} $`} onClick={() => {
-                    }}/>
+                    <Chip color="primary" label={`${property?.share_price} $`} onClick={makeClickable}/>
                     <Chip color='secondary'
                           label={`${property?.units} Units`}
-                          variant="outlined" onClick={() => {
-                    }} sx={{mx: 1}}/>
+                          variant="outlined" onClick={makeClickable} sx={{mx: 1}}/>
                     <Chip color={property?.available ? 'secondary' : 'error'}
                           label={property?.available ? 'Available' : 'Not Available'}
-                          variant="outlined" onClick={() => {
-                    }}/>
+                          variant="outlined" onClick={makeClickable}/>
                 </Box>
             </Box>
             <Box flexGrow={1}/>

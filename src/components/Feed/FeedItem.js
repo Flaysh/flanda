@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {useCallback} from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -12,6 +13,10 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const FeedItem = (feedItem) => {
     const property = feedItem?.property
+
+    const makeClickable = useCallback(() => {
+    })
+
     return (
         <Card>
             <Link component={RouterLink} to={`property/${property.id}`} sx={{textDecoration: 'none'}}>
@@ -20,7 +25,6 @@ const FeedItem = (feedItem) => {
                         effect="blur"
                         src={property.image}
                         alt={'property-image-feed'}
-                        placeholderSrc={'../../assets/placeholder.jpg'}
                         height={220}
                         width={'100%'}/>
                     <CardContent>
@@ -32,20 +36,17 @@ const FeedItem = (feedItem) => {
                         </Typography>
                     </CardContent>
                     <CardActions sx={{p: 2, pt: 0}}>
-                        <Chip color="primary" label={`${property.share_price} $`} onClick={() => {
-                        }}/>
+                        <Chip color="primary" label={`${property.share_price} $`} onClick={makeClickable}/>
                         <Chip color={property?.available ? 'secondary' : 'error'}
                               label={property?.available ? 'Available' : 'Not Available'}
-                              variant="outlined" onClick={() => {
-                        }}/>
+                              variant="outlined" onClick={makeClickable}/>
                         <Box flexGrow={1}/>
                         <Fab variant="extended" color="secondary" size="medium">
-                            Trade
+                            Buy
                         </Fab>
                     </CardActions>
                 </CardActionArea>
             </Link>
-
         </Card>
     );
 }
