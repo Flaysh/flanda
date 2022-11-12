@@ -32,7 +32,6 @@ function App() {
             <MainAppBar/>
             <Box mt={10}>
                 <Routes>
-                    <Route path="/" element={<Home/>}/>
                     <Route path="/feed" element={<Feed/>}/>
                     <Route path="/feed/property/:id" element={<Property/>}/>
                     <Route path="*" element={<Home/>}/>
