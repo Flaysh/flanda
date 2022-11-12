@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/flanda/static/css/main.60c5e894.css",
-    "main.js": "/flanda/static/js/main.6e35bb96.js",
+    "main.css": "/flanda/static/css/main.c74ae2ff.css",
+    "main.js": "/flanda/static/js/main.26094d60.js",
     "static/js/787.612a6070.chunk.js": "/flanda/static/js/787.612a6070.chunk.js",
     "static/media/hero.mp4": "/flanda/static/media/hero.9cea075c4d3039db22eb.mp4",
     "index.html": "/flanda/index.html",
-    "main.60c5e894.css.map": "/flanda/static/css/main.60c5e894.css.map",
-    "main.6e35bb96.js.map": "/flanda/static/js/main.6e35bb96.js.map",
+    "main.c74ae2ff.css.map": "/flanda/static/css/main.c74ae2ff.css.map",
+    "main.26094d60.js.map": "/flanda/static/js/main.26094d60.js.map",
     "787.612a6070.chunk.js.map": "/flanda/static/js/787.612a6070.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60c5e894.css",
-    "static/js/main.6e35bb96.js"
+    "static/css/main.c74ae2ff.css",
+    "static/js/main.26094d60.js"
   ]
 }
